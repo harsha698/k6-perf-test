@@ -16,19 +16,18 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 
-k6_cloud_test:
-  name: k6 cloud test run
+k6_load_test:
+  name: k6 Load Test
   runs-on: ubuntu-latest
+
   steps:
     - name: Checkout
       uses: actions/checkout@v1
 
-    - name: Run k6 cloud test
+    - name: Run local k6 test
       uses: k6io/action@v0.1
       with:
         filename: test-suite/src/cleanTest2.js
-        cloud: true
-        token: ${{ secrets.K6_CLOUD_API_TOKEN }}
 
   # This workflow contains a single job called "build"
   build:
