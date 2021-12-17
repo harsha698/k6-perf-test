@@ -13,7 +13,7 @@
 * Remove a user
 * */
 import {makeGetCall, checkStatusCode, makePostCall, makeDelCall} from './httpHelper.js'
-import {getUserInfo} from '../test-data/createUser.js'
+import {getUserInfo} from './test-suite/test-data/createUser.js'
 import {check} from "k6";
 import {Counter, Trend} from "k6/metrics";
 

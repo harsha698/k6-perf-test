@@ -24,7 +24,7 @@ jobs:
       - name: Run local k6 test
         uses: k6io/action@v0.1
         with:
-          filename: /test-suite/src/cleanTest2.js
+          filename: cleanTest2.js
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
