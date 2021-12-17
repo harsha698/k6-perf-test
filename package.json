@@ -1,0 +1,16 @@
+{
+  "name": "abc-perf-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "abc-test-suite/basics/script01_getCall.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/k6": "^0.35.2",
+    "k6": "^0.0.0"
+  }
+}
