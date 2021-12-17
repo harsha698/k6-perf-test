@@ -13,11 +13,11 @@
 * Remove a user
 * */
 import {makeGetCall, checkStatusCode, makePostCall, makeDelCall} from './httpHelper.js'
-import {getUserInfo} from './test-suite/test-data/createUser.js'
+import {getUserInfo} from './test-data/createUser.js'
 import {check} from "k6";
 import {Counter, Trend} from "k6/metrics";
 
-const userIdsToDelete = JSON.parse(open('../test-data/deleteUser.json'));
+const userIdsToDelete = JSON.parse(open('./test-data/deleteUser.json'));
 
 const list_user = new Counter('listing_users');
 const user_not_found = new Counter('single_user_not_found');
